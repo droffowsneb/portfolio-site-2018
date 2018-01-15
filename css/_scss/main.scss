@@ -4,3 +4,25 @@
 @import '_mixins.scss';
 
 // Your CSS/SCSS below this line
+
+body {
+  background-color: $background-color;
+}
+
+
+.jumbotron {
+  height: 90vh;
+  background: url("../images/lapland.jpg") no-repeat center bottom;
+  background-size: cover;
+  text-align: center;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.footerRow {
+  position: fixed;
+  width: auto;
+  bottom: 0;
+}
