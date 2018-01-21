@@ -9,6 +9,34 @@ body {
   background-color: $background-color;
 }
 
+h1 {
+  color: $h1-color;
+  font-weight: bolder;
+  display: block;
+  border-bottom: 5px solid $h1-color;
+  margin-top: 1em;
+}
+
+h2, h3, h4, h5, h6 {
+  color: $header-color;
+}
+
+a {
+  color: inherit;
+  border-bottom: 1.25px solid $body-text-color;
+  padding-bottom: 0.15rem;
+}
+
+a:hover {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1.25px solid $link-color;
+}
+
+p, ul {
+  color: $body-text-color;
+}
+
 
 .jumbotron {
   height: 90vh;
@@ -17,20 +45,30 @@ body {
   text-align: center;
 }
 
-ul {
-  list-style-type: disc;
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
 }
 
 .footerRow {
-  position: fixed;
-  width: auto;
+  display: block;
+  width: inherit;
   bottom: 0;
-  background-color: $background-color;
-  z-index: 5;
 }
 
 .container {
   margin: 10px auto 0 auto;
-  padding-bottom: 3rem;
+  border-bottom: 1px solid $h1-color;
   width: 50rem;
+  min-height: 90vh;
+}
+
+.row {
+  padding: 50px 0;
 }
