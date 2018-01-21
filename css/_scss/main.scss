@@ -18,11 +18,19 @@ body {
 }
 
 ul {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 .footerRow {
   position: fixed;
   width: auto;
   bottom: 0;
+  background-color: $background-color;
+  z-index: 5;
+}
+
+.container {
+  margin: 10px auto 0 auto;
+  padding-bottom: 3rem;
+  width: 50rem;
 }
